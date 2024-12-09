@@ -1,0 +1,14 @@
+actor {
+stable var counter : Nat = 0;
+
+public func getcount(): async Nat {
+  return counter
+} ;
+public func increment():async Nat{
+  return counter +=1;
+  };
+public func decrement():async Nat{
+if(counter != 0) {counter -= 1;}
+};
+
+}
